@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    android:padding="15dp">
+
+    <!-- כפתור חזרה בפינה השמאלית העליונה -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="16sp"
+        android:backgroundTint="@color/blue_200"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- תוכן המסך בלייאאוט לינארי -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@id/buttonBack">
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="300dp"
+            android:layout_height="237dp"
+            android:contentDescription="אייקון"
+            android:src="@drawable/world_flags" />
+
+        <!-- Text box with dropdown menu for country name -->
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteCountryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country Code"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:completionThreshold="1"
+            android:popupBackground="@android:color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textSize="18dp"
+            android:backgroundTint="@color/blue_200"
+            android:textColor="@color/black"
+            android:padding="12dp" />
+
+        <!-- כפתור FIND BY YOUR LOCATION -->
+        <Button
+            android:id="@+id/buttonFindLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIND BY YOUR LOCATION"
+            android:textSize="18dp"
+            android:backgroundTint="@color/blue_200"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

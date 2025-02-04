@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    android:padding="16dp">
+
+    <!-- כפתור BACK בצד שמאל למעלה -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/blue_200"
+        android:layout_marginTop="16dp" />
+
+    <!-- תמונה של דגל בצד ימין למעלה -->
+    <ImageView
+        android:id="@+id/imageViewFlag"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Country flag"
+        android:src="@drawable/lebanon_flag"
+        android:scaleType="fitCenter" />
+
+    <!-- טקסט Welcome -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/buttonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- שם המדינה -->
+    <TextView
+        android:id="@+id/countryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lebanon"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@id/welcomeMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- טבלת מידע -->
+    <TableLayout
+        android:id="@+id/tableLayoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryName"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="1">
+
+        <!-- שפה מדוברת -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spoken Language:"
+                android:textStyle="bold"
+                android:padding="8dp" />
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arabic"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- מטבע -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency:"
+                android:textStyle="bold"
+                android:padding="8dp" />
+            <TextView
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lebanese Pound (LBP)"
+                android:padding="8dp" />
+        </TableRow>
+
+        <!-- קידומת טלפון -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Code:"
+                android:textStyle="bold"
+                android:padding="8dp" />
+            <TextView
+                android:id="@+id/phoneCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+961"
+                android:padding="8dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- כותרת למסעדות -->
+    <TextView
+        android:id="@+id/recommendedPlacesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended Restaurants:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tableLayoutInfo"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- ScrollView למסעדות -->
+    <ScrollView
+        android:id="@+id/scrollViewRestaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recommendedPlacesTitle"
+        android:layout_above="@id/mapFragment"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- מסעדה 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lebanon_res1"
+                    android:contentDescription="Restaurant Image"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Em Sherif \nAddress: Beirut"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- מסעדה 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lebanon_res2"
+                    android:contentDescription="Restaurant Image"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Babel \nAddress: Dbayeh"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+
+            <!-- מסעדה 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lebanon_res3"
+                    android:contentDescription="Restaurant Image"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Al Sultan Brahim \nAddress: Antelias"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- מסעדה 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lebanon_res4"
+                    android:contentDescription="Restaurant Image"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Abd El Wahab \nAddress: Beirut"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- מסעדה 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/lebanon_res5"
+                    android:contentDescription="Restaurant Image"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: Mayrig \nAddress: Gemmayzeh, Beirut"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- מפה קטנה -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+</RelativeLayout>
