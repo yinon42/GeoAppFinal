@@ -1,0 +1,39 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_screen"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StartMenuActivity">
+
+    <TextView
+        android:id="@+id/startMenu_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="serif"
+        android:text="Geo Polygon SDK Demo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startMenu_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startMenu_LBL"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/blue_200"
+            android:fontFamily="sans-serif-medium"
+            android:text="Start"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+</RelativeLayout>

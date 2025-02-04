@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey_200">#A8343333</color>
+    <color name="grey_500">#EF343333</color>
+    <color name="grey_700">#E9333232</color>
+    <color name="purple_200">#27891189</color>
+    <color name="purple_500">#EFA329A3</color>
+    <color name="purple_700">#E95913C3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="lebanon_flag">#D21624</color>
+    <color name="israel_flag">#0038B7</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
