@@ -12,7 +12,7 @@ For a demo video go to: https://drive.google.com/file/d/1F1zJ8JEC11qvSOtjofwafHF
 
 ## System Requirements
 - Android Studio (latest recommended version)
-- Java/Kotlin installed
+- Java installed
 - Compatible Android version (check `build.gradle.kts` file)
 
 ## Installation and Running
