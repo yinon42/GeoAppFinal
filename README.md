@@ -2,6 +2,8 @@
 
 GeoAppFinal is an Android application designed for personalized music management and smart recommendations.
 
+For a demo video go to: https://drive.google.com/file/d/1F1zJ8JEC11qvSOtjofwafHF5VHh3-OcD/view?usp=sharing
+
 ## Key Features
 - Create and manage personalized playlists
 - Recommendations based on personal taste
@@ -33,4 +35,10 @@ If you want to improve the project, feel free to submit a Pull Request or open a
 
 ## License
 This project is licensed under the MIT License. You can find the details in the `LICENSE` file.
+
+![image](https://github.com/user-attachments/assets/6c115f20-ccef-4006-a2ed-eaf405fa2e24) ![image](https://github.com/user-attachments/assets/6eddd215-2a76-4377-b539-11f47e5fe33a) ![image](https://github.com/user-attachments/assets/e1e132ab-4673-4145-808c-df7c940007bb)
+
+
+
+
 
